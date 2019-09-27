@@ -5,7 +5,7 @@
             <l7:Name>DimiTest</l7:Name>
             <l7:Id>7a132f06ac5ad31ba89d4151198dcad2</l7:Id>
             <l7:Type>SERVICE</l7:Type>
-            <l7:TimeStamp>2019-09-27T15:34:25.989Z</l7:TimeStamp>
+            <l7:TimeStamp>2019-09-27T15:39:42.315Z</l7:TimeStamp>
             <l7:Resource>
                 <l7:Service id="7a132f06ac5ad31ba89d4151198dcad2" version="2">
                     <l7:ServiceDetail folderId="0000000000000000ffffffffffffec76" id="7a132f06ac5ad31ba89d4151198dcad2" version="2">
@@ -27,7 +27,7 @@
                                 <l7:BooleanValue>false</l7:BooleanValue>
                             </l7:Property>
                             <l7:Property key="policyRevision">
-                                <l7:LongValue>2</l7:LongValue>
+                                <l7:LongValue>3</l7:LongValue>
                             </l7:Property>
                             <l7:Property key="soap">
                                 <l7:BooleanValue>false</l7:BooleanValue>
@@ -42,9 +42,13 @@
                     </l7:ServiceDetail>
                     <l7:Resources>
                         <l7:ResourceSet tag="policy">
-                            <l7:Resource type="policy" version="1">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+                            <l7:Resource type="policy" version="2">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
     &lt;wsp:All wsp:Usage="Required"&gt;
+        &lt;L7p:HardcodedResponse&gt;
+            &lt;L7p:Base64ResponseBody stringValue="SGVsbG8="/&gt;
+            &lt;L7p:ResponseContentType stringValue="text/html; charset=UTF-8"/&gt;
+        &lt;/L7p:HardcodedResponse&gt;
         &lt;L7p:HardcodedResponse&gt;
             &lt;L7p:Base64ResponseBody stringValue="SGVsbG8="/&gt;
             &lt;L7p:ResponseContentType stringValue="text/html; charset=UTF-8"/&gt;
